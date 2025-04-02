@@ -663,7 +663,7 @@ footer p::after {
 /* 门店列表界面样式 */
 .store-list-container {
   margin-top: 20px;
-  background: white;
+ background: #2A2A2A; /* 修改为深色背景 */
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
   overflow: hidden;
@@ -746,7 +746,7 @@ footer p::after {
 .store-item {
   display: flex;
   padding: 15px;
-  border-bottom: 1px solid #eee;
+   border-bottom: 1px solid #333; /* 修改分隔线颜色 */
 }
 
 .store-image {
@@ -766,18 +766,18 @@ footer p::after {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #333;
+  color: #fff; /* 修改为白色文本 */
 }
 
 .store-address {
   font-size: 13px;
-  color: #666;
+  color: #aaa; /* 修改为浅灰色文本 */
   margin-bottom: 5px;
 }
 
 .store-location {
   font-size: 13px;
-  color: #999;
+  color: #aaa; /* 修改为浅灰色文本 */
   margin-bottom: 8px;
 }
 
@@ -878,7 +878,7 @@ footer p::after {
 }
 
 .video-item {
-  background: white;
+  background: #2A2A2A;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -932,7 +932,7 @@ footer p::after {
   font-size: 16px;
   font-weight: 600;
   margin: 0;
-  color: #333;
+  color: #fff; /* 修改为白色文本 */
 }
 
 .detail-button {
