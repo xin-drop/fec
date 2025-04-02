@@ -10,8 +10,8 @@
 :root {
   --primary-color: #FF5A00;
   --secondary-color: #FF9E00;
-  --bg-color: #f8f9fa;
-  --text-color: #333;
+ --bg-color: #1E1E1E; /* 修改为深色背景 */
+  --text-color: #fff; /* 修改为白色文本 */
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --hover-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --mobile-padding: 15px;
@@ -22,7 +22,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--bg-color);
+ background-color: var(--bg-color); /* 使用变量设置背景色 */
   overflow-x: hidden;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
