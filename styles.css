@@ -1,191 +1,532 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEC World - 优惠版图</title>
-    
-    <!-- Open Graph 标签 -->
-    <meta property="og:title" content="FEC World - 优惠版图" />
-    <meta property="og:description" content="探索FEC World的优惠版图，随屏跃动的优惠信息" />
-    <meta property="og:image" content="https://example.com/images/og-image.jpg" />
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="FEC World" />
-    
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- 星际导航光带 -->
-    <div class="nav-lightband">
-        <div class="brand-logo">
-            <span class="logo-letter">F</span>
-            <span class="logo-letter">E</span>
-            <span class="logo-letter">C</span>
-        </div>
-    </div>
-    
-    <div class="container">
-        <header>
-            <div class="banner-container">
-                <img src="images/banner.gif" alt="Banner动画" class="banner-gif">
-                <div class="data-dashboard">
-                    <div class="data-item">
-                        <span class="data-value">32</span>
-                        <span class="data-label">覆盖国家</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="data-value">58</span>
-                        <span class="data-label">今日新增优惠券</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="data-value">12,458</span>
-                        <span class="data-label">合作商家</span>
-                    </div>
-                </div>
-                <div class="time-mode-indicator">
-                    <div class="day-night-icon"></div>
-                    <span class="local-time">当地时间: 加载中...</span>
-                </div>
-            </div>
-            <h1>FEC World 优惠版图 随屏跃动</h1>
-            
-            <!-- 场景化导航栏 -->
-            <nav class="scene-nav">
-                <ul class="main-menu">
-                    <li class="menu-item active"><a href="#stores">所有门店</a></li>
-                    <li class="menu-item"><a href="#videos">视频长廊</a></li>
-                    <li class="menu-item"><a href="#gallery">全景相册</a></li>
-                    <li class="menu-item"><a href="#ranking">热门榜单</a></li>
-                </ul>
-                <div class="glow-indicator"></div>
-            </nav>
-        </header>
-    </div>
-    
-    <script src="script.js"></script>
-    
-    <!-- 门店列表内容 -->
-    <div id="stores-content" class="content-section">
-        <div class="store-list-container">
-            <div class="store-search-bar">
-                <span class="store-search-icon">🔍</span>
-                <input type="text" class="store-search-input" placeholder="请输入门店/地址">
-            </div>
-            <div class="store-filter-bar">
-                <div class="store-filter-item">
-                    排序 <span class="store-filter-icon">▼</span>
-                </div>
-                <div class="store-filter-item">
-                    筛选 <span class="store-filter-icon">▼</span>
-                </div>
-                <div class="store-map-toggle">
-                    <span class="store-map-icon">📍</span> 地图模式
-                </div>
-            </div>
-            <ul class="store-list">
-                <li class="store-item">
-                    <img src="images/store1.jpg" alt="厨道重庆菜馆" class="store-image">
-                    <div class="store-info">
-                        <h3 class="store-name">FEC鼎聖茶楼粤菜·坚持手作</h3>
-                        <p class="store-address">广东|深圳(皇岗/水围) 李大全</p>
-                        <p class="store-location">裕享路50号海悦华城海华阁3楼</p>
-                        <div class="store-tags">
-                            <span class="store-tag">回头率80</span>
-                            <span class="store-tag highlight">精选好店推荐</span>
-                            <span class="store-tag">粤式茶点</span>
-                        </div>
-                    </div>
-                    <span class="store-distance">5.9km</span>
-                </li>
-                <li class="store-item">
-                    <img src="images/store2.jpg" alt="俏园" class="store-image">
-                    <div class="store-info">
-                        <h3 class="store-name">银座FEC奢侈品店</h3>
-                        <p class="store-address">日本|东京 小陈</p>
-                        <p class="store-location">银座商业区</p>
-                        <div class="store-tags">
-                            <span class="store-tag">回头率80</span>
-                            <span class="store-tag highlight">精选好店推荐</span>
-                        </div>
-                    </div>
-                    <span class="store-distance">2886.4km</span>
-                </li>
-                <li class="store-item">
-                    <img src="images/store3.jpg" alt="民间粮仓饭店" class="store-image">
-                    <div class="store-info">
-                        <h3 class="store-name">FEC红楼美食广场</h3>
-                        <p class="store-location">马来西亚|吉隆坡</p>
-                        <div class="store-tags">
-                            <span class="store-tag">回头率80</span>
-                            <span class="store-tag highlight">精选好店推荐</span>
-                        </div>
-                    </div>
-                    <span class="store-distance">2542.4km</span>
-                </li>
-                <li class="store-item">
-                    <img src="images/store4.jpg" alt="小座院子" class="store-image">
-                    <div class="store-info">
-                        <h3 class="store-name">FEC深圳文博宫</h3>
-                        <p class="store-location">广东|深圳</p>
-                    </div>
-                    <span class="store-distance">16km</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- 视频长廊内容 -->
-    <div id="videos-content" class="content-section" style="display: none;">
-        <div class="video-gallery-container">
-            <div class="video-list">
-                <div class="video-item">
-                    <div class="video-thumbnail">
-                        <div class="play-button" data-video-src="videos/shenzhen.mp4">
-                            <svg viewBox="0 0 24 24" width="40" height="40">
-                                <path fill="#FF5A00" d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
-                            </svg>
-                        </div>
-                        <img src="images/video-thumb1.jpg" alt="视频缩略图">
-                    </div>
-                    <div class="video-info">
-                        <h3 class="video-location">深圳 · 文博宫</h3>
-                    </div>
-                    <a href="#" class="detail-button">查看详情</a>
-                </div>
-                
-                <div class="video-item">
-                    <div class="video-thumbnail">
-                        <div class="play-button" data-video-src="videos/malaysia.mp4">
-                            <svg viewBox="0 0 24 24" width="40" height="40">
-                                <path fill="#FF5A00" d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
-                            </svg>
-                        </div>
-                        <img src="images/video-thumb2.jpg" alt="视频缩略图">
-                    </div>
-                    <div class="video-info">
-                        <h3 class="video-location">马来西亚 · 猫山王榴莲</h3>
-                    </div>
-                    <a href="#" class="detail-button">查看详情</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- 视频播放器模态框 -->
-    <div id="video-modal" class="video-modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <video id="video-player" controls>
-                <source src="" type="video/mp4">
-                您的浏览器不支持HTML5视频播放。
-            </video>
-        </div>
-    </div>
-</div>
-    
-    <!-- 版权信息 -->
-    <p class="copyright">&copy; 2025 FEC World. 探索无限优惠，尽在指尖。</p>
-</body>
-</html>
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 全局样式优化 - 移动端适配 */
+:root {
+  --primary-color: #FF5A00;
+  --secondary-color: #FF9E00;
+  --bg-color: #1E1E1E; /* 修改为深色背景 */
+  --text-color: #fff; /* 修改为白色文本 */
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --hover-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --mobile-padding: 15px;
+  --border-radius: 12px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 容器适配移动端 */
+.container {
+  width: 100%;
+  padding: 0 var(--mobile-padding);
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* 导航光带样式优化 */
+.nav-lightband {
+  background: #1E1E1E !important; /* 添加!important确保优先级 */
+  padding: 12px var(--mobile-padding);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+/* 确保品牌logo文字颜色正确 */
+.logo-letter {
+  font-family: 'Montserrat', -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px rgba(255, 90, 0, 0.2);
+  transition: var(--hover-transition);
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-letter {
+  font-family: 'Montserrat', -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px rgba(255, 90, 0, 0.2);
+  transition: var(--hover-transition);
+}
+
+/* 标题样式优化 */
+h1 {
+  font-family: 'Montserrat', -apple-system, sans-serif;
+  font-size: clamp(24px, 7vw, 32px);
+  font-weight: 700;
+  text-align: center;
+  margin: 25px 0;
+  color: var(--text-color);
+}
+
+/* 场景化导航栏样式 */
+.scene-nav {
+  position: relative;
+  margin: 20px 0;
+  padding: 5px 0;
+  border-radius: 8px;
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-item {
+  padding: 10px 0;
+  position: relative;
+  transition: var(--hover-transition);
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover a {
+  color: var(--primary-color);
+  text-shadow: 0 0 8px rgba(255, 90, 0, 0.4);
+}
+
+.menu-item.active a {
+  color: var(--primary-color);
+  text-shadow: 0 0 12px rgba(255, 90, 0, 0.6);
+}
+
+.glow-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+  background-size: 200% 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  animation: flowingLight 2s infinite linear;
+  z-index: 1;
+  width: 25%;
+  left: 0;
+}
+
+@keyframes flowingLight {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* 为不同菜单项设置光条位置 */
+.menu-item:nth-child(1).active ~ .glow-indicator { left: 0%; }
+.menu-item:nth-child(2).active ~ .glow-indicator { left: 25%; }
+.menu-item:nth-child(3).active ~ .glow-indicator { left: 50%; }
+.menu-item:nth-child(4).active ~ .glow-indicator { left: 75%; }
+
+/* Banner样式 */
+.banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.banner-gif {
+    width: 100%;
+    display: block;
+}
+
+.data-dashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.time-mode-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 5px 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: white;
+    font-size: 12px;
+}
+
+.data-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.data-value {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.data-label {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.day-night-icon {
+  width: 16px;
+  height: 16px;
+  background: url('images/day-night.svg') no-repeat center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+/* 门店列表界面样式 */
+.store-list-container {
+  margin-top: 20px;
+  background: #1E1E1E; /* 修改为深色背景 */
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.store-search-bar {
+  position: relative;
+  padding: 15px;
+  background: #2A2A2A;
+  border-bottom: 1px solid #333;
+}
+
+.store-search-input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  font-size: 14px;
+  color: #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.store-search-icon {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+}
+
+.store-filter-bar {
+  display: flex;
+  padding: 10px 15px;
+  border-bottom: 1px solid #333;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.store-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.store-filter-item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #ddd;
+  white-space: nowrap;
+}
+
+.store-filter-icon {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.store-map-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #333;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.store-map-icon {
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+.store-list {
+  padding: 0;
+  list-style: none;
+}
+
+.store-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.store-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.store-info {
+  flex: 1;
+}
+
+.store-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+.store-address {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.store-location {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.store-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.store-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #333;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.store-tag.highlight {
+  background: rgba(255, 90, 0, 0.1);
+  color: var(--primary-color);
+}
+
+.store-distance {
+  font-size: 14px;
+  color: #ddd;
+  font-weight: 500;
+  margin-left: auto;
+  align-self: center;
+}
+
+/* 视频长廊样式 */
+.video-gallery-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-item {
+  background: #1E1E1E; /* 修改为深色背景 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 宽高比 */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-info {
+  padding: 15px;
+}
+
+.video-location {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #ddd;
+}
+
+.detail-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.detail-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* 视频模态框样式 */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+}
+
+.close-modal {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#video-player {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 版权信息 */
+.copyright {
+  text-align: center;
+  padding: 20px 0;
+  color: #888;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .video-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .video-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 安全区适配 - 适配全面屏手机 */
+@supports (padding: max(0px)) {
+  .nav-lightband, .container, .copyright {
+    padding-left: max(var(--mobile-padding), env(safe-area-inset-left));
+    padding-right: max(var(--mobile-padding), env(safe-area-inset-right));
+  }
+  
+  .copyright {
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+}
