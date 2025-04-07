@@ -192,14 +192,49 @@ h1 {
 }
 
 /* 在小屏幕上可能需要调整数据项的显示方式 */
-@media (max-width: 480px) {
+/* 修改数据面板在移动设备上的显示 */
+@media (max-width: 768px) {
     .data-dashboard.right-top {
-        flex-direction: column;
-        align-items: flex-end;
+        flex-direction: row; /* 改为横向排列 */
+        align-items: center;
+        padding: 5px 8px;
+        background: rgba(0, 0, 0, 0.5);
+        max-width: none; /* 移除最大宽度限制 */
+        width: auto;
     }
     
     .data-dashboard.right-top .data-item {
-        margin: 2px 0;
+        margin: 0 4px;
+        font-size: 90%;
+    }
+    
+    .data-value {
+        font-size: 14px;
+    }
+    
+    .data-label {
+        font-size: 9px;
+    }
+}
+
+/* 在更小的屏幕上调整间距和字体大小 */
+@media (max-width: 480px) {
+    .data-dashboard.right-top {
+        right: 5px;
+        top: 5px;
+        padding: 3px 6px;
+    }
+    
+    .data-dashboard.right-top .data-item {
+        margin: 0 3px;
+    }
+    
+    .data-value {
+        font-size: 12px;
+    }
+    
+    .data-label {
+        font-size: 8px;
     }
 }
 .time-mode-indicator {
