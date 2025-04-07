@@ -77,10 +77,10 @@ body {
 /* 标题样式优化 */
 h1 {
   font-family: 'Montserrat', -apple-system, sans-serif;
-  font-size: clamp(24px, 7vw, 32px);
+  font-size: clamp(20px, 5vw, 28px); /* 减小字体大小 */
   font-weight: 700;
   text-align: center;
-  margin: 25px 0;
+  margin: 20px 0; /* 稍微减小上下边距 */
   color: var(--text-color);
 }
 
@@ -170,10 +170,12 @@ h1 {
     display: block;
 }
 
-.data-dashboard {
+/* 修改数据面板位置到右上角 */
+.data-dashboard.right-top {
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px; /* 改为右侧 */
+    left: auto; /* 取消左侧定位 */
     display: flex;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.3);
@@ -183,6 +185,23 @@ h1 {
     -webkit-backdrop-filter: blur(4px);
 }
 
+/* 可能需要调整数据项的样式以适应右上角位置 */
+.data-dashboard.right-top .data-item {
+    margin: 0 5px;
+    text-align: center;
+}
+
+/* 在小屏幕上可能需要调整数据项的显示方式 */
+@media (max-width: 480px) {
+    .data-dashboard.right-top {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .data-dashboard.right-top .data-item {
+        margin: 2px 0;
+    }
+}
 .time-mode-indicator {
     position: absolute;
     bottom: 10px;
